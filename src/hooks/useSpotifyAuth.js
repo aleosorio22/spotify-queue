@@ -3,7 +3,10 @@ import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID; // Reemplázalo con tu Client ID
-const REDIRECT_URI = "http://localhost:5173";
+const REDIRECT_URI = import.meta.env.MODE === "development"
+  ? "http://localhost:5173"
+  : "https://spotify-queue.netlify.app"; // Cambia por tu URL de Netlify
+
 const SCOPES = ["user-top-read"];
 const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=token&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&scope=${SCOPES.join("%20")}`;
 
