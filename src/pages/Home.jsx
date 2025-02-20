@@ -51,7 +51,7 @@ const Home = () => {
       <div className="absolute bottom-4 text-gray-400 flex flex-col items-center">
         <p className="text-sm">Desarrollado por Alejandro Osorio</p>
         <a
-          href="https://spotify-queue.netlify.app/"
+          href="https://github.com/aleosorio22/spotify-queue"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-gray-300 hover:text-white transition"
