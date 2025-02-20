@@ -1,6 +1,6 @@
 # 🎵 Spotify Queue - Administrador de tu Música en Cola
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)](https://YOUR_NETLIFY_SITE.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)](https://spotify-queue.netlify.app)
 
 ## 🎯 Descripción
 **Spotify Queue** es una aplicación web moderna desarrollada con **React + Vite**, que permite visualizar las **10 canciones más escuchadas de un usuario en Spotify** y gestionarlas en una **cola de reproducción** utilizando una estructura FIFO (First In, First Out). Además, la cola de reproducción admite prioridades, lo que permite dar preferencia a ciertas canciones.
