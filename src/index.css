@@ -1,0 +1,28 @@
+@import '@fontsource/poppins';
+
+html, body, #root {
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes galaxy-move {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.bg-galaxy {
+  background: radial-gradient(circle at center, #1d1d1d, #0a0a0a);
+  background-size: 400% 400%;
+  animation: galaxy-move 20s infinite linear;
+}
